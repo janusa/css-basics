@@ -1,0 +1,81 @@
+
+  #cf {
+    background-image: url("img/field.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    width:1200px;
+    left: 0;
+    height: 1000px;
+  }
+
+  #cr {
+      position: relative;
+  }
+  #cf img {
+    position: absolute;
+    left: 100px;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+  }
+ 
+
+@keyframes cf3FadeInOut {
+    0% {
+    opacity:1;
+    }
+    25% {
+    opacity:0.75;
+    }
+    50% {
+    opacity:0.5;
+    }
+    75% {
+        opacity: 0.25;
+    }
+    100% {
+    opacity:0;
+    }
+  } 
+  /* @keyframes cf3FadeOutIn {
+    0% {
+        opacity:0;
+        }
+        25% {
+        opacity:0.25;
+        }
+        50% {
+        opacity:0.5;
+        }
+        75% {
+            opacity: 0.75;
+        }
+        100% {
+        opacity:1;
+        }
+  }  */
+
+  #cf img.bottom {
+    width: 300px;
+    left: 500px;
+    top: 550px;
+    animation-name: cf3FadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 30;
+    animation-duration: 0.1s;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    }
+  
+  #cf img.top {
+  animation-name: cf3FadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 30;
+  animation-duration: 0.1s;
+  animation-direction: alternate;
+  animation-fill-mode: backwards;
+  animation-delay: 1s;
+  }
