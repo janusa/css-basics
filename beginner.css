@@ -1,26 +1,49 @@
 
-  #cf {
+html {
+  background: url("img/field.jpg");
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* #background {
     background-image: url("img/field.jpg");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: contain;
     position: absolute;
-    width:1200px;
-    left: 0;
-    height: 1000px;
-  }
+    width:100%;
+    height:100%;
+} */
 
-  #cr {
-      position: relative;
-  }
-  #cf img {
+  /* #background img.charmander {
+    position: relative;
+    width: 15em;
+    left: 45em;
+    top: 35em;
+    animation-name: cf3FadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 30;
+    animation-duration: 0.1s;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    }
+  
+  #background img.chameleon {
     position: absolute;
-    left: 100px;
-    -webkit-transition: opacity 1s ease-in-out;
-    -moz-transition: opacity 1s ease-in-out;
-    -o-transition: opacity 1s ease-in-out;
-    transition: opacity 1s ease-in-out;
+    width: 25em;
+    left: 40em;
+    top: 30em;
+    transform: translate(-50%, -50%);
+    animation-name: cf3FadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 30;
+    animation-duration: 0.1s;
+    animation-direction: alternate;
+    animation-fill-mode: backwards;
+    animation-delay: 1s;
   }
- 
 
 @keyframes cf3FadeInOut {
     0% {
@@ -38,29 +61,13 @@
     100% {
     opacity:0;
     }
-  } 
-  /* @keyframes cf3FadeOutIn {
-    0% {
-        opacity:0;
-        }
-        25% {
-        opacity:0.25;
-        }
-        50% {
-        opacity:0.5;
-        }
-        75% {
-            opacity: 0.75;
-        }
-        100% {
-        opacity:1;
-        }
-  }  */
+  }
 
-  #cf img.bottom {
-    width: 300px;
-    left: 500px;
-    top: 550px;
+  #background img.charmander {
+    position: relative;
+    width: 15em;
+    left: 45em;
+    top: 35em;
     animation-name: cf3FadeInOut;
     animation-timing-function: ease-in-out;
     animation-iteration-count: 30;
@@ -70,12 +77,16 @@
     animation-delay: 1s;
     }
   
-  #cf img.top {
-  animation-name: cf3FadeInOut;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: 30;
-  animation-duration: 0.1s;
-  animation-direction: alternate;
-  animation-fill-mode: backwards;
-  animation-delay: 1s;
-  }
+  #background img.chameleon {
+    position: absolute;
+    width: 25em;
+    left: 40em;
+    top: 30em;
+    animation-name: cf3FadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 30;
+    animation-duration: 0.1s;
+    animation-direction: alternate;
+    animation-fill-mode: backwards;
+    animation-delay: 1s;
+  } */
